@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		3826AE4523981B5600054DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826AE4423981B5600054DD7 /* AppDelegate.swift */; };
 		3826AE4723981B5600054DD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826AE4623981B5600054DD7 /* SceneDelegate.swift */; };
-		3826AE4923981B5600054DD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826AE4823981B5600054DD7 /* ViewController.swift */; };
 		3826AE4C23981B5600054DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3826AE4A23981B5600054DD7 /* Main.storyboard */; };
 		3826AE4E23981B5700054DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3826AE4D23981B5700054DD7 /* Assets.xcassets */; };
 		3826AE5123981B5700054DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3826AE4F23981B5700054DD7 /* LaunchScreen.storyboard */; };
+		38FC8781239863EE008A401C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC8780239863EE008A401C /* Character.swift */; };
+		38FC878323986406008A401C /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC878223986406008A401C /* House.swift */; };
+		38FC87852398662C008A401C /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC87842398662C008A401C /* CharacterController.swift */; };
+		38FC87872398666C008A401C /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC87862398666C008A401C /* HouseViewController.swift */; };
+		38FC878923986D91008A401C /* DispatchGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC878823986D91008A401C /* DispatchGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3826AE4123981B5600054DD7 /* HarryPotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3826AE4423981B5600054DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3826AE4623981B5600054DD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3826AE4823981B5600054DD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3826AE4B23981B5600054DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3826AE4D23981B5700054DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3826AE5023981B5700054DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3826AE5223981B5700054DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38FC8780239863EE008A401C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		38FC878223986406008A401C /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		38FC87842398662C008A401C /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
+		38FC87862398666C008A401C /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		38FC878823986D91008A401C /* DispatchGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		3826AE4323981B5600054DD7 /* HarryPotter */ = {
 			isa = PBXGroup;
 			children = (
-				3826AE4423981B5600054DD7 /* AppDelegate.swift */,
-				3826AE4623981B5600054DD7 /* SceneDelegate.swift */,
-				3826AE4823981B5600054DD7 /* ViewController.swift */,
-				3826AE4A23981B5600054DD7 /* Main.storyboard */,
-				3826AE4D23981B5700054DD7 /* Assets.xcassets */,
-				3826AE4F23981B5700054DD7 /* LaunchScreen.storyboard */,
-				3826AE5223981B5700054DD7 /* Info.plist */,
+				38FC877E23981D99008A401C /* Models */,
+				38FC877D23981D8E008A401C /* Model Controllers */,
+				38FC877C23981D7E008A401C /* View Controllers */,
+				38FC877F23982046008A401C /* Helpers */,
+				38FC877B23981D57008A401C /* Storyboards */,
+				38FC877A23981D38008A401C /* Resources */,
 			);
 			path = HarryPotter;
+			sourceTree = "<group>";
+		};
+		38FC877A23981D38008A401C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3826AE4423981B5600054DD7 /* AppDelegate.swift */,
+				3826AE4623981B5600054DD7 /* SceneDelegate.swift */,
+				3826AE4D23981B5700054DD7 /* Assets.xcassets */,
+				3826AE5223981B5700054DD7 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		38FC877B23981D57008A401C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3826AE4A23981B5600054DD7 /* Main.storyboard */,
+				3826AE4F23981B5700054DD7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		38FC877C23981D7E008A401C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38FC87862398666C008A401C /* HouseViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		38FC877D23981D8E008A401C /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38FC87842398662C008A401C /* CharacterController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		38FC877E23981D99008A401C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38FC8780239863EE008A401C /* Character.swift */,
+				38FC878223986406008A401C /* House.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38FC877F23982046008A401C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				38FC878823986D91008A401C /* DispatchGroup.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3826AE4923981B5600054DD7 /* ViewController.swift in Sources */,
 				3826AE4523981B5600054DD7 /* AppDelegate.swift in Sources */,
+				38FC87872398666C008A401C /* HouseViewController.swift in Sources */,
+				38FC8781239863EE008A401C /* Character.swift in Sources */,
+				38FC878923986D91008A401C /* DispatchGroup.swift in Sources */,
+				38FC878323986406008A401C /* House.swift in Sources */,
+				38FC87852398662C008A401C /* CharacterController.swift in Sources */,
 				3826AE4723981B5600054DD7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCQFNX9QQ7;
-				INFOPLIST_FILE = HarryPotter/Info.plist;
+				INFOPLIST_FILE = HarryPotter/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCQFNX9QQ7;
-				INFOPLIST_FILE = HarryPotter/Info.plist;
+				INFOPLIST_FILE = HarryPotter/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
