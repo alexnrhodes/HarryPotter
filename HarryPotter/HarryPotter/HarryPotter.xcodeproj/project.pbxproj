@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3826AE252398191F00054DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826AE242398191F00054DD7 /* AppDelegate.swift */; };
-		3826AE272398191F00054DD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826AE262398191F00054DD7 /* SceneDelegate.swift */; };
-		3826AE292398191F00054DD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826AE282398191F00054DD7 /* ViewController.swift */; };
-		3826AE2C2398191F00054DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3826AE2A2398191F00054DD7 /* Main.storyboard */; };
-		3826AE2E2398192000054DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3826AE2D2398192000054DD7 /* Assets.xcassets */; };
-		3826AE312398192000054DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3826AE2F2398192000054DD7 /* LaunchScreen.storyboard */; };
+		3826AE4523981B5600054DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826AE4423981B5600054DD7 /* AppDelegate.swift */; };
+		3826AE4723981B5600054DD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826AE4623981B5600054DD7 /* SceneDelegate.swift */; };
+		3826AE4923981B5600054DD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826AE4823981B5600054DD7 /* ViewController.swift */; };
+		3826AE4C23981B5600054DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3826AE4A23981B5600054DD7 /* Main.storyboard */; };
+		3826AE4E23981B5700054DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3826AE4D23981B5700054DD7 /* Assets.xcassets */; };
+		3826AE5123981B5700054DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3826AE4F23981B5700054DD7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3826AE212398191F00054DD7 /* HarryPotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3826AE242398191F00054DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3826AE262398191F00054DD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3826AE282398191F00054DD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3826AE2B2398191F00054DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3826AE2D2398192000054DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3826AE302398192000054DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3826AE322398192000054DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3826AE4123981B5600054DD7 /* HarryPotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3826AE4423981B5600054DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3826AE4623981B5600054DD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3826AE4823981B5600054DD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3826AE4B23981B5600054DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3826AE4D23981B5700054DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3826AE5023981B5700054DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3826AE5223981B5700054DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3826AE1E2398191F00054DD7 /* Frameworks */ = {
+		3826AE3E23981B5600054DD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,32 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3826AE182398191F00054DD7 = {
+		3826AE3823981B5600054DD7 = {
 			isa = PBXGroup;
 			children = (
-				3826AE232398191F00054DD7 /* HarryPotter */,
-				3826AE222398191F00054DD7 /* Products */,
+				3826AE4323981B5600054DD7 /* HarryPotter */,
+				3826AE4223981B5600054DD7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3826AE222398191F00054DD7 /* Products */ = {
+		3826AE4223981B5600054DD7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3826AE212398191F00054DD7 /* HarryPotter.app */,
+				3826AE4123981B5600054DD7 /* HarryPotter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3826AE232398191F00054DD7 /* HarryPotter */ = {
+		3826AE4323981B5600054DD7 /* HarryPotter */ = {
 			isa = PBXGroup;
 			children = (
-				3826AE242398191F00054DD7 /* AppDelegate.swift */,
-				3826AE262398191F00054DD7 /* SceneDelegate.swift */,
-				3826AE282398191F00054DD7 /* ViewController.swift */,
-				3826AE2A2398191F00054DD7 /* Main.storyboard */,
-				3826AE2D2398192000054DD7 /* Assets.xcassets */,
-				3826AE2F2398192000054DD7 /* LaunchScreen.storyboard */,
-				3826AE322398192000054DD7 /* Info.plist */,
+				3826AE4423981B5600054DD7 /* AppDelegate.swift */,
+				3826AE4623981B5600054DD7 /* SceneDelegate.swift */,
+				3826AE4823981B5600054DD7 /* ViewController.swift */,
+				3826AE4A23981B5600054DD7 /* Main.storyboard */,
+				3826AE4D23981B5700054DD7 /* Assets.xcassets */,
+				3826AE4F23981B5700054DD7 /* LaunchScreen.storyboard */,
+				3826AE5223981B5700054DD7 /* Info.plist */,
 			);
 			path = HarryPotter;
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3826AE202398191F00054DD7 /* HarryPotter */ = {
+		3826AE4023981B5600054DD7 /* HarryPotter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3826AE352398192000054DD7 /* Build configuration list for PBXNativeTarget "HarryPotter" */;
+			buildConfigurationList = 3826AE5523981B5700054DD7 /* Build configuration list for PBXNativeTarget "HarryPotter" */;
 			buildPhases = (
-				3826AE1D2398191F00054DD7 /* Sources */,
-				3826AE1E2398191F00054DD7 /* Frameworks */,
-				3826AE1F2398191F00054DD7 /* Resources */,
+				3826AE3D23981B5600054DD7 /* Sources */,
+				3826AE3E23981B5600054DD7 /* Frameworks */,
+				3826AE3F23981B5600054DD7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +84,25 @@
 			);
 			name = HarryPotter;
 			productName = HarryPotter;
-			productReference = 3826AE212398191F00054DD7 /* HarryPotter.app */;
+			productReference = 3826AE4123981B5600054DD7 /* HarryPotter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3826AE192398191F00054DD7 /* Project object */ = {
+		3826AE3923981B5600054DD7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Alex Rhodes";
 				TargetAttributes = {
-					3826AE202398191F00054DD7 = {
+					3826AE4023981B5600054DD7 = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
 			};
-			buildConfigurationList = 3826AE1C2398191F00054DD7 /* Build configuration list for PBXProject "HarryPotter" */;
+			buildConfigurationList = 3826AE3C23981B5600054DD7 /* Build configuration list for PBXProject "HarryPotter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 3826AE182398191F00054DD7;
-			productRefGroup = 3826AE222398191F00054DD7 /* Products */;
+			mainGroup = 3826AE3823981B5600054DD7;
+			productRefGroup = 3826AE4223981B5600054DD7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3826AE202398191F00054DD7 /* HarryPotter */,
+				3826AE4023981B5600054DD7 /* HarryPotter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3826AE1F2398191F00054DD7 /* Resources */ = {
+		3826AE3F23981B5600054DD7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3826AE312398192000054DD7 /* LaunchScreen.storyboard in Resources */,
-				3826AE2E2398192000054DD7 /* Assets.xcassets in Resources */,
-				3826AE2C2398191F00054DD7 /* Main.storyboard in Resources */,
+				3826AE5123981B5700054DD7 /* LaunchScreen.storyboard in Resources */,
+				3826AE4E23981B5700054DD7 /* Assets.xcassets in Resources */,
+				3826AE4C23981B5600054DD7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3826AE1D2398191F00054DD7 /* Sources */ = {
+		3826AE3D23981B5600054DD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3826AE292398191F00054DD7 /* ViewController.swift in Sources */,
-				3826AE252398191F00054DD7 /* AppDelegate.swift in Sources */,
-				3826AE272398191F00054DD7 /* SceneDelegate.swift in Sources */,
+				3826AE4923981B5600054DD7 /* ViewController.swift in Sources */,
+				3826AE4523981B5600054DD7 /* AppDelegate.swift in Sources */,
+				3826AE4723981B5600054DD7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3826AE2A2398191F00054DD7 /* Main.storyboard */ = {
+		3826AE4A23981B5600054DD7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3826AE2B2398191F00054DD7 /* Base */,
+				3826AE4B23981B5600054DD7 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3826AE2F2398192000054DD7 /* LaunchScreen.storyboard */ = {
+		3826AE4F23981B5700054DD7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3826AE302398192000054DD7 /* Base */,
+				3826AE5023981B5700054DD7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3826AE332398192000054DD7 /* Debug */ = {
+		3826AE5323981B5700054DD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		3826AE342398192000054DD7 /* Release */ = {
+		3826AE5423981B5700054DD7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +280,7 @@
 			};
 			name = Release;
 		};
-		3826AE362398192000054DD7 /* Debug */ = {
+		3826AE5623981B5700054DD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -298,7 +298,7 @@
 			};
 			name = Debug;
 		};
-		3826AE372398192000054DD7 /* Release */ = {
+		3826AE5723981B5700054DD7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -319,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3826AE1C2398191F00054DD7 /* Build configuration list for PBXProject "HarryPotter" */ = {
+		3826AE3C23981B5600054DD7 /* Build configuration list for PBXProject "HarryPotter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3826AE332398192000054DD7 /* Debug */,
-				3826AE342398192000054DD7 /* Release */,
+				3826AE5323981B5700054DD7 /* Debug */,
+				3826AE5423981B5700054DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3826AE352398192000054DD7 /* Build configuration list for PBXNativeTarget "HarryPotter" */ = {
+		3826AE5523981B5700054DD7 /* Build configuration list for PBXNativeTarget "HarryPotter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3826AE362398192000054DD7 /* Debug */,
-				3826AE372398192000054DD7 /* Release */,
+				3826AE5623981B5700054DD7 /* Debug */,
+				3826AE5723981B5700054DD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3826AE192398191F00054DD7 /* Project object */;
+	rootObject = 3826AE3923981B5600054DD7 /* Project object */;
 }
