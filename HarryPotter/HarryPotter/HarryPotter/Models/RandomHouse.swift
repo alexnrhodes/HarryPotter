@@ -1,5 +1,5 @@
 //
-//  HPCharacter.swift
+//  RandomHouse.swift
 //  HarryPotter
 //
 //  Created by Alex Rhodes on 12/4/19.
@@ -8,7 +8,6 @@
 
 import Foundation
 
-
-struct Character {
-    
+struct RandomHouse: Codable {
+    var name: String
 }
