@@ -9,8 +9,7 @@
 import Foundation
 
 
-class CharacterController  {
-    
+class HouseController  {
     
     var house: RandomHouse?
     
@@ -43,5 +42,10 @@ class CharacterController  {
             }
             Group.dispatchGroup.leave()
         }.resume()
-    } 
+    }
+    
+    
+    func getAllHouses(completion: @escaping (Error?, [House]?) -> Void) {
+        
+    }
 }

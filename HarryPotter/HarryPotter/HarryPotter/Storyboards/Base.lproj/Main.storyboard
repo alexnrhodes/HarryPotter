@@ -16,34 +16,70 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="tuJ-vf-hWQ">
-                                <rect key="frame" x="159" y="402" width="96" height="92.5"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tU2-u6-jLk">
-                                        <rect key="frame" x="11.5" y="0.0" width="73" height="30"/>
+                                        <rect key="frame" x="170.5" y="0.0" width="73" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Fvg-81-Q8f"/>
+                                        </constraints>
                                         <state key="normal" title="Get House"/>
                                         <connections>
                                             <action selector="getRandomHouseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RR7-Zd-PoF"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaO-sh-9kb">
-                                        <rect key="frame" x="0.0" y="72" width="96" height="20.5"/>
+                                        <rect key="frame" x="159" y="72" width="96" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h88-HU-cbn">
+                                        <rect key="frame" x="0.0" y="134.5" width="414" height="683.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="uaD-Xx-EMN" detailTextLabel="NAY-Sa-zxd" style="IBUITableViewCellStyleValue1" id="f5J-co-rvt">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f5J-co-rvt" id="7CB-Uy-7Gd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uaD-Xx-EMN">
+                                                            <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NAY-Sa-zxd">
+                                                            <rect key="frame" x="350" y="12" width="44" height="20.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="tuJ-vf-hWQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TeY-ZL-Jdg"/>
-                            <constraint firstItem="tuJ-vf-hWQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Txu-kp-NNS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tuJ-vf-hWQ" secondAttribute="trailing" id="FWb-vp-WPd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tuJ-vf-hWQ" secondAttribute="bottom" id="LqO-L9-qx1"/>
+                            <constraint firstItem="tuJ-vf-hWQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="det-9b-gJj"/>
+                            <constraint firstItem="tuJ-vf-hWQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nvV-aQ-35T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="getRandomHouseButton" destination="tU2-u6-jLk" id="vLz-VQ-JCd"/>
                         <outlet property="houseNameLabel" destination="gaO-sh-9kb" id="JQT-1o-qjD"/>
+                        <outlet property="housesTableView" destination="h88-HU-cbn" id="FiR-1i-Qbq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

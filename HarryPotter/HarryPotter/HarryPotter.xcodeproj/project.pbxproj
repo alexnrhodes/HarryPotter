@@ -14,7 +14,7 @@
 		3826AE5123981B5700054DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3826AE4F23981B5700054DD7 /* LaunchScreen.storyboard */; };
 		38FC8781239863EE008A401C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC8780239863EE008A401C /* Character.swift */; };
 		38FC878323986406008A401C /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC878223986406008A401C /* House.swift */; };
-		38FC87852398662C008A401C /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC87842398662C008A401C /* CharacterController.swift */; };
+		38FC87852398662C008A401C /* HouseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC87842398662C008A401C /* HouseController.swift */; };
 		38FC87872398666C008A401C /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC87862398666C008A401C /* HouseViewController.swift */; };
 		38FC878923986D91008A401C /* DispatchGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC878823986D91008A401C /* DispatchGroup.swift */; };
 		38FC878B23987414008A401C /* RandomHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC878A23987414008A401C /* RandomHouse.swift */; };
@@ -30,7 +30,7 @@
 		3826AE5223981B5700054DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38FC8780239863EE008A401C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		38FC878223986406008A401C /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
-		38FC87842398662C008A401C /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
+		38FC87842398662C008A401C /* HouseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseController.swift; sourceTree = "<group>"; };
 		38FC87862398666C008A401C /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
 		38FC878823986D91008A401C /* DispatchGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroup.swift; sourceTree = "<group>"; };
 		38FC878A23987414008A401C /* RandomHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHouse.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		38FC877D23981D8E008A401C /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				38FC87842398662C008A401C /* CharacterController.swift */,
+				38FC87842398662C008A401C /* HouseController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -207,7 +207,7 @@
 				38FC8781239863EE008A401C /* Character.swift in Sources */,
 				38FC878923986D91008A401C /* DispatchGroup.swift in Sources */,
 				38FC878323986406008A401C /* House.swift in Sources */,
-				38FC87852398662C008A401C /* CharacterController.swift in Sources */,
+				38FC87852398662C008A401C /* HouseController.swift in Sources */,
 				3826AE4723981B5600054DD7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

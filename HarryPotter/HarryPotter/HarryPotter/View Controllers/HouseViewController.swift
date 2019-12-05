@@ -12,8 +12,9 @@ class HouseViewController: UIViewController {
     
     @IBOutlet weak var getRandomHouseButton: UIButton!
     @IBOutlet weak var houseNameLabel: UILabel!
+    @IBOutlet weak var housesTableView: UITableView!
     
-    let characterController = CharacterController()
+    let characterController = HouseController()
     
     var house: String?
     
