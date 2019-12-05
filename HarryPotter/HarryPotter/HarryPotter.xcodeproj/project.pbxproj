@@ -17,6 +17,7 @@
 		38FC87852398662C008A401C /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC87842398662C008A401C /* CharacterController.swift */; };
 		38FC87872398666C008A401C /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC87862398666C008A401C /* HouseViewController.swift */; };
 		38FC878923986D91008A401C /* DispatchGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC878823986D91008A401C /* DispatchGroup.swift */; };
+		38FC878B23987414008A401C /* RandomHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC878A23987414008A401C /* RandomHouse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		38FC87842398662C008A401C /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
 		38FC87862398666C008A401C /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
 		38FC878823986D91008A401C /* DispatchGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroup.swift; sourceTree = "<group>"; };
+		38FC878A23987414008A401C /* RandomHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHouse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				38FC8780239863EE008A401C /* Character.swift */,
 				38FC878223986406008A401C /* House.swift */,
+				38FC878A23987414008A401C /* RandomHouse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3826AE4523981B5600054DD7 /* AppDelegate.swift in Sources */,
+				38FC878B23987414008A401C /* RandomHouse.swift in Sources */,
 				38FC87872398666C008A401C /* HouseViewController.swift in Sources */,
 				38FC8781239863EE008A401C /* Character.swift in Sources */,
 				38FC878923986D91008A401C /* DispatchGroup.swift in Sources */,

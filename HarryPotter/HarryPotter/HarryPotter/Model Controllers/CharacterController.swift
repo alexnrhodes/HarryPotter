@@ -12,7 +12,7 @@ import Foundation
 class CharacterController  {
     
     
-    var house: House?
+    var house: RandomHouse?
     
     let baseURL = URL(string: "https://www.potterapi.com/v1/")!
     
@@ -35,7 +35,7 @@ class CharacterController  {
             
             do {
                 let houseName = try JSONDecoder().decode(String.self, from: data)
-                let house = House(name: houseName)
+                let house = RandomHouse(name: houseName)
                 self.house = house
                 completion(nil, houseName)
             } catch {
