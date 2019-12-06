@@ -14,25 +14,37 @@ class HouseViewController: UIViewController {
     @IBOutlet weak var houseNameLabel: UILabel!
     @IBOutlet weak var housesTableView: UITableView!
     
-    let characterController = HouseController()
+    let houseController = HouseController()
     
-    var house: String?
+    var house: String? {
+        didSet {
+            setViews()
+        }
+    }
+    
+    var houses: [House]? {
+        didSet {
+            housesTableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        housesTableView.delegate = self
+        housesTableView.dataSource = self
         setViews()
-        
+        getAllHouses()
     }
     
     @IBAction func getRandomHouseButtonTapped(_ sender: UIButton) {
-        characterController.getRandomHouse { (error, house) in
+        
+        houseController.getRandomHouse { (error, house) in
             if let error = error {
                 NSLog("Error getting random house: \(error)")
             }
             
             guard let house = house else {return}
             self.house = house
-            self.setViews()
         }
     }
     
@@ -43,7 +55,16 @@ class HouseViewController: UIViewController {
         }
     }
     
-    
+    private func getAllHouses() {
+        houseController.getAllHouses { (error, houses) in
+            if let error = error {
+                NSLog("Error getting ALL houses: \(error)")
+            }
+            
+            guard let houses = houses else {return}
+            self.houses = houses
+        }
+    }
     /*
      // MARK: - Navigation
      
@@ -53,5 +74,24 @@ class HouseViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
+}
+
+extension HouseViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return houses?.count ?? 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HouseCell", for: indexPath)
+        
+        let house = houses?[indexPath.row]
+        
+        cell.textLabel?.text = house?.name
+        cell.detailTextLabel?.text = house?.founder
+        
+        return cell
+    }
+    
     
 }

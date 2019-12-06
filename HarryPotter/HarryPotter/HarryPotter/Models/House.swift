@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct Member: Codable {
+    let name: String
+}
+
 struct House: Codable {
     let id: String
     let name: String
@@ -15,7 +19,7 @@ struct House: Codable {
     let headOfHouse: String
     let houseGhost: String
     let founder: String
-    let members: [String]
+    let members: [Member]
     let values: [String]
     let colors: [String]
     
@@ -38,38 +42,30 @@ struct House: Codable {
     init(from decoder: Decoder) throws {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        let id = try container.decode(String.self, forKey: .id)
-        let name = try container.decode(String.self, forKey: .name)
-        let mascot = try container.decode(String.self, forKey: .mascot)
-        let headOfHouse = try container.decode(String.self, forKey: .headOfHouse)
-        let houseGhost = try container.decode(String.self, forKey: .houseGhost)
-        let founder = try container.decode(String.self, forKey: .founder)
-        let values = try container.decode([String].self, forKey: .values)
-        let colors = try container.decode([String].self, forKey: .colors)
+        id = try container.decode(String.self, forKey: .id)
+        name = try container.decode(String.self, forKey: .name)
+        mascot = try container.decode(String.self, forKey: .mascot)
+        headOfHouse = try container.decode(String.self, forKey: .headOfHouse)
+        houseGhost = try container.decode(String.self, forKey: .houseGhost)
+        founder = try container.decode(String.self, forKey: .founder)
+        values = try container.decode([String].self, forKey: .values)
+        colors = try container.decode([String].self, forKey: .colors)
 
-        self.id = id
-        self.name = name
-        self.mascot = mascot
-        self.headOfHouse = headOfHouse
-        self.houseGhost = houseGhost
-        self.founder = founder
-        self.values = values
-        self.colors = colors
         
-        var memberNames: [String] = []
-        var memberContainerArray = try container.nestedUnkeyedContainer(forKey: .members)
+//        var memberNames: [Member] = []
+        let memberContainerArray = try container.nestedUnkeyedContainer(forKey: .members)
         while !memberContainerArray.isAtEnd {
-            let nameContainer = try memberContainerArray.nestedContainer(keyedBy: CodingKeys.MemberKeys.self)
-            let name = try nameContainer.decode(String.self, forKey: .name)
-            memberNames.append(name)
+//            let nameContainer = try memberContainerArray.nestedContainer(keyedBy: CodingKeys.MemberKeys.self)
+//            let name = try nameContainer.decode(Member.self, forKey: .name)
+//            memberNames.append(name)
         }
-        self.members = memberNames
+        self.members = memberContainerArray as! [Member]
         
         
         
     }
     
-    init(id: String, name: String, mascot: String, headOfHouse: String, houseGhost: String, founder: String, members: [String], values: [String], colors: [String]) {
+    init(id: String, name: String, mascot: String, headOfHouse: String, houseGhost: String, founder: String, members: [Member], values: [String], colors: [String]) {
         self.id = id
         self.name = name
         self.mascot = mascot

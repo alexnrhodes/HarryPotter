@@ -38,7 +38,7 @@
                                         <rect key="frame" x="0.0" y="134.5" width="414" height="683.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="uaD-Xx-EMN" detailTextLabel="NAY-Sa-zxd" style="IBUITableViewCellStyleValue1" id="f5J-co-rvt">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HouseCell" textLabel="uaD-Xx-EMN" detailTextLabel="NAY-Sa-zxd" style="IBUITableViewCellStyleValue1" id="f5J-co-rvt">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f5J-co-rvt" id="7CB-Uy-7Gd">
