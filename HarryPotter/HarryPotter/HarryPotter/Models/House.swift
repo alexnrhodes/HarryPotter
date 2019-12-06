@@ -19,7 +19,7 @@ struct House: Codable {
     let headOfHouse: String
     let houseGhost: String
     let founder: String
-    let members: [Member]
+    let members: [String]
     let values: [String]
     let colors: [String]
     
@@ -35,7 +35,7 @@ struct House: Codable {
        case colors
         
         enum MemberKeys: String, CodingKey {
-               case name
+               case id = "_id"
            }
     }
     
@@ -52,20 +52,20 @@ struct House: Codable {
         colors = try container.decode([String].self, forKey: .colors)
 
         
-//        var memberNames: [Member] = []
-        let memberContainerArray = try container.nestedUnkeyedContainer(forKey: .members)
+        var memberIDs: [String] = []
+        var memberContainerArray = try container.nestedUnkeyedContainer(forKey: .members)
         while !memberContainerArray.isAtEnd {
-//            let nameContainer = try memberContainerArray.nestedContainer(keyedBy: CodingKeys.MemberKeys.self)
-//            let name = try nameContainer.decode(Member.self, forKey: .name)
-//            memberNames.append(name)
+           let nameContainer = try memberContainerArray.nestedContainer(keyedBy: CodingKeys.MemberKeys.self)
+           let id = try nameContainer.decode(String.self, forKey: .id)
+           memberIDs.append(id)
         }
-        self.members = memberContainerArray as! [Member]
+        self.members = memberIDs
         
         
         
     }
     
-    init(id: String, name: String, mascot: String, headOfHouse: String, houseGhost: String, founder: String, members: [Member], values: [String], colors: [String]) {
+    init(id: String, name: String, mascot: String, headOfHouse: String, houseGhost: String, founder: String, members: [String], values: [String], colors: [String]) {
         self.id = id
         self.name = name
         self.mascot = mascot
