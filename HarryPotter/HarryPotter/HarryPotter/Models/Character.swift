@@ -27,10 +27,11 @@ struct Character: Codable {
         case ministryOfMagic
         case orderOfThePhoenix
         case dumbledoresArmy
-        case deathEater
         case bloodStatus
-    }
+        case deathEater
         case species
+    }
+        
     
     init(from decoder: Decoder) throws {
         
