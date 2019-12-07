@@ -55,9 +55,9 @@ struct House: Codable {
         var memberIDs: [String] = []
         var memberContainerArray = try container.nestedUnkeyedContainer(forKey: .members)
         while !memberContainerArray.isAtEnd {
-           let nameContainer = try memberContainerArray.nestedContainer(keyedBy: CodingKeys.MemberKeys.self)
-           let id = try nameContainer.decode(String.self, forKey: .id)
-           memberIDs.append(id)
+//           let nameContainer = try memberContainerArray.nestedContainer(keyedBy: CodingKeys.MemberKeys.self)
+//           let id = try nameContainer.decode(String.self, forKey: .id)
+//           memberIDs.append(id)
         }
         self.members = memberIDs
         
