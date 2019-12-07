@@ -16,9 +16,9 @@ struct Character: Codable {
     let ministryOfMagic: Bool
     let orderOfThePhoenix: Bool
     let dumbledoresArmy: Bool
-    let deathEater: Bool
     let bloodStatus: String
     let species: String
+    let deathEater: Bool
     
     enum CodingKeys: String, CodingKey {
         case id = "_id"
@@ -29,8 +29,8 @@ struct Character: Codable {
         case dumbledoresArmy
         case deathEater
         case bloodStatus
-        case species
     }
+        case species
     
     init(from decoder: Decoder) throws {
         
