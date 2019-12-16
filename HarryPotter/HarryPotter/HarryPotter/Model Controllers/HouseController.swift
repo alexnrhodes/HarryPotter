@@ -83,38 +83,6 @@ class HouseController  {
         }.resume()
     }
     
-    func getAllCharacters(completion: @escaping (Error?, [Character]?) -> Void) {
-           
-           var url = baseURL.appendingPathComponent("characters")
-           
-           var components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
-           components.queryItems = [keyQuery]
-           url = components.url!
-           print(url)
-           
-           
-           Group.dispatchGroup.enter()
-           URLSession.shared.dataTask(with: url) {data,_,error in
-               
-               if let error = error {
-                   NSLog("Error retrieving ALL characters: \(error)")
-                   completion(error,nil)
-               }
-               
-               guard let data = data else {
-                   NSLog("Retrieved bad data")
-                   return
-               }
-               
-               do {
-                   let characters = try JSONDecoder().decode([Character].self, from: data)
-                   self.characters = characters
-                   completion(nil, characters)
-               } catch {
-                   NSLog("Error decoding ALL houses from JSON: \(error)")
-               }
-               Group.dispatchGroup.leave()
-           }.resume()
-       }
+    
     
 }

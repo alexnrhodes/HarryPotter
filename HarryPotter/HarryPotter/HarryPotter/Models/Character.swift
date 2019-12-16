@@ -23,7 +23,6 @@ struct Character: Codable {
     enum CodingKeys: String, CodingKey {
         case id = "_id"
         case name
-//        case role
         case ministryOfMagic
         case orderOfThePhoenix
         case dumbledoresArmy
@@ -38,7 +37,6 @@ struct Character: Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = try container.decode(String.self, forKey: .id)
         name = try container.decode(String.self, forKey: .name)
-//        role = try container.decode(String.self, forKey: .role)
         ministryOfMagic = try container.decode(Bool.self, forKey: .ministryOfMagic)
         orderOfThePhoenix = try container.decode(Bool.self, forKey: .orderOfThePhoenix)
         dumbledoresArmy = try container.decode(Bool.self, forKey: .ministryOfMagic)
@@ -49,5 +47,16 @@ struct Character: Codable {
 
     }
    
+    init(id: String, name: String, minOfMagic: Bool, orderOfThePheonix: Bool, dumbledoresArmy: Bool, deathEater: Bool, bloodStatus: String, species: String) {
+        self.id = id
+        self.name = name
+        self.ministryOfMagic = minOfMagic
+        self.orderOfThePhoenix = orderOfThePheonix
+        self.dumbledoresArmy = dumbledoresArmy
+        self.deathEater = deathEater
+        self.bloodStatus = bloodStatus
+        self.species = species
+
+    }
 
 }

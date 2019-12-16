@@ -2,29 +2,35 @@
 //  CharacterController.swift
 //  HarryPotter
 //
-//  Created by Alex Rhodes on 12/4/19.
+//  Created by Alex Rhodes on 12/6/19.
 //  Copyright © 2019 Alex Rhodes. All rights reserved.
 //
 
 import Foundation
 
-
-class CharacterController  {
+class CharacterController {
     
-    
-    var house: RandomHouse?
+    var characters: [Character]?
     
     let baseURL = URL(string: "https://www.potterapi.com/v1/")!
     
-    func getRandomHouse(completion: @escaping (Error?, String?) -> Void) {
+    let keyQuery = URLQueryItem(name: "key", value: "$2a$10$ZXBuTf7U3LY0xTqo1J5JS.rPiLvyfek9Qs3ReFVYijgWKuGTARtEi")
+    
+    func getAllCharacters(completion: @escaping (Error?, [Character]?) -> Void) {
         
-        let requestURL = baseURL.appendingPathComponent("sortingHat")
+        var url = baseURL.appendingPathComponent("characters")
+        
+        var components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
+        components.queryItems = [keyQuery]
+        url = components.url!
+        print(url)
+        
         
         Group.dispatchGroup.enter()
-        URLSession.shared.dataTask(with: requestURL)  { data,_,error in
+        URLSession.shared.dataTask(with: url) {data,_,error in
             
             if let error = error {
-                NSLog("Error retrieving random house: \(error)")
+                NSLog("Error retrieving ALL characters: \(error)")
                 completion(error,nil)
             }
             
@@ -34,14 +40,19 @@ class CharacterController  {
             }
             
             do {
-                let houseName = try JSONDecoder().decode(String.self, from: data)
-                let house = RandomHouse(name: houseName)
-                self.house = house
-                completion(nil, houseName)
+                let characters = try JSONDecoder().decode([Character].self, from: data)
+                var organizedCharacters = [Character]()
+                
+                for char in characters {
+                    let character = Character(id: char.id, name: char.name, minOfMagic: char.ministryOfMagic, orderOfThePheonix: char.orderOfThePhoenix, dumbledoresArmy: char.dumbledoresArmy, deathEater: char.deathEater, bloodStatus: char.bloodStatus, species: char.species)
+                    organizedCharacters.append(character)
+                }
+                self.characters = organizedCharacters
+                completion(nil, self.characters)
             } catch {
-                NSLog("Error decoding house from JSON: \(error)")
+                NSLog("Error decoding ALL houses from JSON: \(error)")
             }
             Group.dispatchGroup.leave()
         }.resume()
-    } 
+    }
 }
