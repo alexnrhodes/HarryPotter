@@ -15,6 +15,7 @@ class HouseViewController: UIViewController {
     @IBOutlet weak var housesTableView: UITableView!
     
     let houseController = HouseController()
+    let characterController = CharacterController()
     
     var house: String? {
         didSet {
@@ -30,24 +31,25 @@ class HouseViewController: UIViewController {
     
     var characters: [Character]? {
         didSet {
-            
+            housesTableView.reloadData()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         housesTableView.delegate = self
         housesTableView.dataSource = self
+        
         setViews()
         
-        houseController.getAllCharacters { (error, characters) in
+        characterController.getAllCharacters { (error, characters) in
             if let error = error {
                 NSLog("Error getting random house: \(error)")
             }
             
             guard let characters = characters else {return}
             self.characters = characters
-            print(characters)
         }
         
         //        getAllHouses()
@@ -96,16 +98,19 @@ class HouseViewController: UIViewController {
 extension HouseViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return houses?.count ?? 1
+        return characters?.count ?? 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HouseCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath)
         
-        let house = houses?[indexPath.row]
+        let character = characters?[indexPath.row]
         
-        cell.textLabel?.text = house?.name
-        cell.detailTextLabel?.text = house?.founder
+        DispatchQueue.main.async {
+            cell.textLabel?.text = character?.name
+            cell.detailTextLabel?.text = character?.species
+        }
+        
         
         return cell
     }
